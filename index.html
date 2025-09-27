@@ -7,7 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Carousel Template · Bootstrap v5.3</title>
+    <title>panaderia examen
+
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/carousel.rtl.css">
@@ -98,22 +100,26 @@
     .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
     }
+    
+    .img-circle {
+        border: 5px black solid;
+    }
 </style>
-</head>
+
 
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
+     <symbol id="circle" viewbox="0 0 16 16">
         <path
           d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
         ></path>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
+   
+      <symbol id="circle-half" viewbox="0 0 16 16">
         <path
           d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
         ></path>
       </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <symbol id="moon-stars-fill"     viewbox="0 0 16 16">
         <path
           d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
         ></path>
@@ -121,22 +127,22 @@
           d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
         ></path>
       </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
+      <symbol id="sun-fill" viewbox="0 0 16 16">
         <path
           d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
         ></path>
-      </symbol>
-    </svg>
+    
+    
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <svg class="bi my-1 theme-icon-active" aria-hidden="true">
           <use href="#circle-half"></use>
         </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+    <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
             <svg class="bi me-2 opacity-50" aria-hidden="true">
               <use href="#sun-fill"></use>
             </svg>
@@ -145,9 +151,9 @@
               <use href="#check2"></use>
             </svg>
           </button>
-            </li>
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
             <svg class="bi me-2 opacity-50" aria-hidden="true">
               <use href="#moon-stars-fill"></use>
             </svg>
@@ -156,9 +162,9 @@
               <use href="#check2"></use>
             </svg>
           </button>
-            </li>
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
             <svg class="bi me-2 opacity-50" aria-hidden="true">
               <use href="#circle-half"></use>
             </svg>
@@ -167,30 +173,32 @@
               <use href="#check2"></use>
             </svg>
           </button>
-            </li>
-        </ul>
+        </li>
+    </ul>
     </div>
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Carousel</a>
+                <a class="navbar-brand" href="#">La Gran Panaderia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Contactanos</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">
-                Search
+                Buscar
               </button>
                     </form>
                 </div>
@@ -206,51 +214,40 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+                    <img src="img/imagen1.jpg" alt="">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
                     <div class="container">
                         <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
+                            <h1>La mejor parva.</h1>
                             <p class="opacity-75">
-                                Some representative placeholder content for the first slide of the carousel.
+                                Ricos panes para todo tipo de gustos.
                             </p>
                             <p>
-                                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                                <a class="btn btn-lg btn-primary" href="#">compra</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+                    <img src="img/imagen2.jpg" alt="">
+
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
+                            <h1>Un rico pan.</h1>
                             <p>
-                                Some representative placeholder content for the second slide of the carousel.
+                                Lo debes probar si o si.
                             </p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#">compralo</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+                    <img src="img/imagen3.jpg" alt="">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
                     <div class="container">
                         <div class="carousel-caption text-end">
                             <h1>One more for good measure.</h1>
@@ -280,56 +277,49 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-                    <h2 class="fw-normal">Heading</h2>
+                    <img class="img-circle" src="img/imagen4.png" alt="">
+
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
+
+                    <h2 class="fw-normal">Croissant</h2>
                     <p>
-                        Some representative placeholder content for the three columns of text below the carousel. This is the first column.
+                        El cruasán (del francés croissant, que significa "creciente" por su forma de media luna) es un bollo de hojaldre de origen vienés, popularizado en Francia, conocido por su textura ligera, crujiente y su sabor a mantequilla. En algunos países hispanohablantes
+                        se le conoce como medialuna, cachito, cangrejo o cuernito, entre otros nombres.
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
-                    </p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-                    <h2 class="fw-normal">Heading</h2>
-                    <p>
-                        Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
+                        <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img" width="140" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-                    <h2 class="fw-normal">Heading</h2>
+                    <img class="img-circle" src="img/imagen5.png" alt="">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
+                    <h2 class="fw-normal">Pan fitness</h2>
                     <p>
-                        And lastly this, the third column of representative placeholder content.
+                        Un "pan fitness" es una categoría de pan con características nutricionales mejoradas, ideal para quienes buscan una dieta más saludable, control de peso o aumentar masa muscular. Se diferencia del pan blanco convencional por ser más rico en proteínas,
+                        fibra y nutrientes, mientras que su contenido en hidratos de carbono suele ser menor.
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#">View details &raquo;</a>
+                        <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/imagen6.png" alt="">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+
+                    <h2 class="fw-normal">Pandulce</h2>
+                    <p>
+                        El pan dulce, como su nombre indica, es una categoría de panificables que se caracteriza por llevar azúcar o algún otro edulcorante en su masa. A diferencia del pan salado tradicional, el pan dulce es un mundo de sabores y texturas, con una gran variedad
+                        de formas y nombres según la región.
+                    </p>
+                    <p>
+                        <a class="btn btn-secondary" href="#">Ver detalles &raquo;</a>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -340,75 +330,66 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-normal lh-1">
-                        First featurette heading.
-                        <span class="text-body-secondary">It’ll blow your mind.</span>
+                        Quienes
+                        <span class="text-body-secondary">Somos.</span>
                     </h2>
                     <p class="lead">
-                        Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+                        En el corazón de Rionegro, Colombia, donde el sol matutino besa las laderas de las montañas, hay una panadería centenaria conocida como "El Horno del Sol". La historia del lugar está envuelta en el misterio y la magia, transmitida de generación en generación
+                        a través de la leyenda local.
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
+                    <img class="img-circle" src="img/imagen7.png" alt="">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+                    <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                
               </text>
-            </svg>
+
                 </div>
             </div>
             <hr class="featurette-divider" />
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-normal lh-1">
-                        Oh yeah, it’s that good.
-                        <span class="text-body-secondary">See for yourself.</span>
+                        Mision,
+                        <span class="text-body-secondary">a futuro</span>
                     </h2>
                     <p class="lead">
-                        Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
+                        Para una panadería con visión de futuro, se puede crear una misión que la posicione como un referente de innovación, sostenibilidad y conexión social, más allá de la simple venta de productos.
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
+                    <img class="img-circle" src="img/imagen8.png" alt="">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+                    <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+               
               </text>
-            </svg>
+
                 </div>
             </div>
             <hr class="featurette-divider" />
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-normal lh-1">
-                        And lastly, this one.
-                        <span class="text-body-secondary">Checkmate.</span>
+                        Vision,
+                        <span class="text-body-secondary">a futuro.</span>
                     </h2>
                     <p class="lead">
-                        And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.
+                        Una visión de futuro para una panadería exitosa combina la tradición artesanal con la innovación tecnológica, la sostenibilidad y la conexión emocional con el cliente. Se centra en ofrecer más que un producto: ofrece una experiencia que se adapta a las
+                        nuevas demandas del mercado.
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
+                    <img class="img-circle" src="img/imagen9.png" alt="">
+
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+                    <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+               
               </text>
-            </svg>
+
                 </div>
             </div>
             <hr class="featurette-divider" />
@@ -426,5 +407,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
+</html>
 
 </html>
